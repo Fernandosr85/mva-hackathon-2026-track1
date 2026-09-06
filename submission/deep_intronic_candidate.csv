@@ -1,0 +1,2 @@
+gene,chrom,pos,ref,alt,consequence,hgvsc,intron,rsids,clinvar_or_ensembl_clin_sig,gnomad_max_af,splice_evidence
+BUB1B,15,40216470,A,G,intron_variant,ENST00000287598.11:c.2679-1026A>G,20/22,,,,not scored: SpliceAI plugin unavailable on the public REST request; pseudo-exon effect requires dedicated prediction and RNA/minigene validation

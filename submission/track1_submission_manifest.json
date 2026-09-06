@@ -1,0 +1,20 @@
+{
+  "frozen": "2026-09-04",
+  "reissued": "2026-09-04",
+  "track": 1,
+  "reissue_reason": "Superseded the 2026-09-04 manifest before submission. Two changes, neither touching content: (1) third-party name removed from the workbook's document metadata - it was not ours to publish; (2) the predictions filename was corrected to match the repository and a hash field was added, which the first manifest omitted.",
+  "report_file": "fernandosr85_track1_report_v2.md",
+  "report_sha256": "144958094a5526706f1651f92eb6a2a5d0586ec3e82e1235d9a50b07cded969c",
+  "methods_file": "fernandosr85_methods_description.xlsx",
+  "methods_sha256": "c3f48af664830eced0153a2465e133ebb989c2dd6201c239d86f8d4f3a9494ed",
+  "methods_sha256_superseded": "944e7f96e3996a18e53a56da8cf101838910c54290d02d6071a6e54ddc98e0e5",
+  "methods_note": "Content unchanged - 13/13 Track 1 answers and 11/11 Track 2 answers verified identical after the metadata edit. The hash differs only because document properties changed.",
+  "predictions_file": "fernandosr85_bub1b-panel-acmg_audited.csv",
+  "predictions_sha256": "2b5107e50a2de0543a5b77fef26e947fffb83abbab0bc6152e89cd9a6f10cca6",
+  "predictions_note": "Byte-identical to the scored submission. DO NOT REGENERATE from the notebook - rebuilding may reorder rows or reformat floats and produce a different file with no visible change. Renaming is safe; regenerating is not.",
+  "team_display_name": "(leave blank - matches the original submission)",
+  "github_url": "https://github.com/Fernandosr85/mva-hackathon-2026-track1",
+  "github_visibility_at_submission": "private",
+  "github_visibility_note": "Repository access is disclosed in the report header and in a note before Appendix A. The methods description is reproduced in full in the report so the methodology is assessable without repository access.",
+  "line_endings": "Artefacts are stored LF. .gitattributes marks them -text so core.autocrlf cannot rewrite them on checkout; verified against a clean clone. Without this the declared hashes would fail for anyone cloning on Windows."
+}

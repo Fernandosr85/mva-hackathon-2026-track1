@@ -1,0 +1,16 @@
+# Dependencies for notebooks/mva_track1_analysis.ipynb.
+#
+# Minimum versions rather than exact pins: the analysis calls stable,
+# long-standing APIs in each package and nothing here is version-sensitive.
+#
+# Not listed: kaggle_secrets, which supplies HF_TOKEN and is provided by the
+# Kaggle runtime rather than by pip. Running outside Kaggle means setting the
+# HF_TOKEN environment variable directly and skipping that cell.
+
+huggingface_hub>=0.23.0    # gated dataset download (hf_hub_download)
+pysam>=0.22.0              # tabix-indexed VCF region fetch
+python-docx>=1.1.0         # HPO term extraction from the phenotype document
+requests>=2.31.0           # Ensembl REST (gene structure, VEP annotation)
+pandas>=2.0.0              # variant tables and shortlist assembly
+numpy>=1.24.0              # numeric support for the table operations
+scipy>=1.10.0              # binomial test for the allele-balance check

@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# Controlled genomic data — NEVER commit
+#
+# The proband data in this challenge is released under a WCG IRB protocol and
+# is not redistributable. Anything derived from the child's genome stays out of
+# version control, including subsets, reformattings, caches and index files.
+# ---------------------------------------------------------------------------
+data/
+.cache/
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.tbi
+*.bam
+*.cram
+*.crai
+*.bai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+panel_variants.tsv
+*.docx
+
+# Per-variant genotype tables under any name (DELETE-list material).
+*_variants.tsv
+*_genotypes.tsv
+*_genotypes.csv
+
+# Archives. A zip or tarball hides every pattern above from git: the results
+# archive in this challenge held the VCF, its index, the phenotype .docx and
+# panel_variants.tsv, and none of the rules above would have caught it.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+results*/
+
+# Notebook state
+.ipynb_checkpoints/
+**/*-checkpoint.ipynb
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# Credentials
+.hf_token
+*token*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+# Frozen submission artefacts.
+#
+# track1_submission_manifest.json declares the SHA-256 of the report and the
+# methods form. Git's end-of-line conversion would rewrite those bytes on
+# checkout (core.autocrlf is true by default on Windows), and the declared
+# digests would then fail to verify in a fresh clone. -text disables all
+# conversion so the files are delivered exactly as submitted.
+submission/fernandosr85_track1_report_v2.md      -text
+submission/fernandosr85_methods_description.xlsx binary
+submission/track1_submission_manifest.json       -text
+
+# The submitted candidate lists are artefacts too: keep them byte-stable.
+submission/*.csv -text
+
+# Notebook JSON should round-trip identically on every platform, so that
+# scripts/strip_outputs.py --check compares like with like.
+*.ipynb text eol=lf
